@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700');
+:root{
+   --header-bg: rgb(255 224 171);
+   --header-color:black;
+   --main-bg:white; 
+   --operators-bg:#FFBC80;
+   --operators-bg-hover:rgba(255,189,77,0.7);
+   --all-btn-bg:white;
+   --all-btn-hover:#cdcdcd;
+ 
+}
+
+[data-theme="dark"]{
+    --header-bg: black;
+    --header-color:white;
+    --main-bg:rgb(192, 187, 187);
+    --operators-bg:rgb(114, 112, 112);
+    --operators-bg-hover:rgb(65 59 59 / 24%);
+    --all-btn-bg:rgb(192, 187, 187);
+    --all-btn-hover:lightgrey;
+
+}
+
+body {
+    margin: 0;
+    font-size: 18px;
+    background: rgb(230, 231, 231);
+}
+#title{
+    font-size: 38px;
+    margin-top: 30px;
+}
+#calculator {
+    margin: auto;
+    width: 336px;    
+    border-radius: 10px;
+    box-shadow: 0 0 3em #999797;
+}
+header {
+    padding: 20px;
+    background: var(--header-bg);
+    color: var(--header-color);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: right;
+    height: 80px;
+}
+
+header #detail {
+    font-size: 1em;
+}
+
+header #current{
+    font-size: 2em;
+}
+
+#keys {
+    height: 100%;
+    background: var(--main-bg);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: auto;
+}
+
+#keys .operators{
+    background-color:var(--operators-bg);
+    
+    margin-top: 2px;
+}
+
+#keys .operators:hover{
+    background-color:var(--operators-bg-hover);
+
+}
+#keys .numbers{
+    margin-top: 2px;
+    
+}
+#keys #all_clear{
+   width: 37.3%;
+    margin-top: 2px;
+}
+#keys #clear{
+    width: 37.41%;
+    margin-top: 2px;
+}
+#keys #plus-minus{
+  width: 25.3%;
+  margin-top: 2px;
+ }
+
+#keys button {
+    font-size: 1.2em;
+    font-family: "Roboto Mono";
+    float: left;
+    width: 25%;
+    border: 0;
+    padding: 1em;
+    cursor: pointer;
+    background: var(--all-btn-bg);
+}
+
+#keys button:hover {
+    background: var(--all-btn-hover);
+    transition: .4s all;
+}
+
+#keys button:focus {
+    outline: none;
+}
+
+#keys button:active {
+    box-shadow: 0 0 10px #cdcdcd;
+}
+
+/* slider CSS */
+
+.theme-switch-wrapper {
+    display: flex;    
+    margin-top: 82px;
+  }
+  .theme-switch-wrapper em {
+    margin-left: 10px;
+    font-size: 1rem;
+  }
+  
+  .theme-switch {
+    display: inline-block;
+    height: 16px;
+    position: relative;
+    width: 50px;
+    margin-right: 12px;
+  }
+  
+  .theme-switch input {
+    display: none;
+  }
+  
+  .slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: 0.4s;
+  }
+  
+  .slider:before {
+    background-color: black;
+    content: "";
+    bottom: -5px;
+    height: 26px;
+    right: 25px;
+    position: absolute;
+    transition: 0.4s;
+    width: 26px;
+  }
+  
+  input:checked + .slider {
+    background-color: rgba(14, 13, 13, 0.479);
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
