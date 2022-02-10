@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <link rel="stylesheet" href="creations/style.css">
+
+</head>
+<body>
+    <section class="heading">
+        <h2>Tribute to Lata Mangeshkar  (1929 - 2022)</h2>
+        <h3>Our Most Beloved LataDii !!</h3>
+    </section>
+    <section class="container" style="height: 350px;">
+        <div class="content" style="text-align: center;">
+            
+            "I believe in one power, and that is the hand of God. I respect all religions.!!!"
+        </div>
+        <div class="image" >
+            <img src="img/latam.jpg">
+        </div>
+    </section>
+    <section class="bio">
+        <h2>Biography&nbsp;&nbsp;&nbsp;<i onclick="drop()" class="fas fa-caret-down" style="cursor: pointer;"></i></h2>
+        <p>
+            Lata Mangeshkar, also known as the <b><i>"Nightingale of India"</i></b>, was one of the most versatile singers in the Indian film industry. Lata was born on September 28, 1929, to classical singer and theatre artist Pandit Deenanath Mangeshkar and Shevanti in Indore, Madhya Pradesh. Her father started teaching her music at an early age. By the time she was five, Lata was seen participating as an actress in plays written by her father. Her siblings  - Meena, Asha, Usha, and Hridaynath - are all accomplished singers and musicians.
+        
+            In a career spanning nearly eight decades, Lata Mangeshkar was the singing voice for a bevy of Bollywood leading ladies. She lent her voice to over 5,000 songs in over a thousand Hindi and 36 regional films. She had an unprecedented impact on Indian film music. Since 1942, Lata pushed back the boundaries of music with her mind-boggling skills. Over the years, Lata had sung for actresses from Madhubala to Priyanka Chopra. Best known for her versatile voice quality, she recorded albums of all kinds (ghazals, pop, etc).
+        </p>
+        <div class="line">
+
+        </div>
+    </section>
+    <div class="player">
+
+        <h2>The journey of "Lata Mangeshkar's" songs</h2>
+        <video src="creations/clip.mp4" class="video" playsinline autoplay  style="width: 650px; height:600px"></video>
+        <!-- show controls -->
+        <div class="show-controls">
+            <div class="controls-container">
+                <!-- Progress Bar    -->
+                <div class="progress-range" title="seek">
+                    <div class="progress-bar"></div>
+                </div>
+                <div class="control-group">
+                    <!-- left controls  -->
+                    <div class="controls-left">
+                        <!-- Play / Pause  -->
+                        <div class="play-controls">
+                            <i class="fas fa-play" title="play" id="play-btn"></i>
+                        </div>
+                        <!-- Volumn  -->
+                        <div class="volume">
+                            <div class="volume-icon">
+                                <i class="fas fa-volume-up" title="Mute" id="volume-icon"></i>
+                            </div>
+                            <div class="volume-range" title="Change Volume">
+                                <div class="volume-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Right Controls  -->
+                    <div class="controls-right">
+                        <!-- Speed  -->
+                        <div class="speed" title="Playback Rate">
+                            <select name="playbackRate" class="player-speed">
+                                <option value="0.5">0.5 x</option>
+                                <option value="0.75">0.75 x</option>
+                                <option value="1" selected>1 x</option>
+                                <option value="1.5">1.5 x</option>
+                                <option value="2">2 x</option>
+                            </select>
+                        </div>
+                        <!-- Time -->
+                        <div class="time">
+                            <span class="time-elapsed">00:00 / </span>
+                            <span class="time-duration">02:38 / </span>
+                        </div>
+                        <!-- Full Screen  -->
+                        <div class="fullscreen">
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+    <div class="line2"></div>
+    <section class="footer">
+        <h3>Made with <i class="fab fa-html5"></i> and <i class="fab fa-css3-alt"></i> by <span style="color: blue;"> Payal Nagane</span></h3>
+    </section>
+    <!-- Script -->
+    <script src="creations/script.js"></script>
+</body>
+</html>
