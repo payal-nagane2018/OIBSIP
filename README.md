@@ -1,2 +1,0 @@
-# OIBSIP
-Simple Calculator
